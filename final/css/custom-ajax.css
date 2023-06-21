@@ -27,6 +27,15 @@ button{
     background-color: red;
     color: white;
     border: 2px solid #bd0e0e;
-
-    
 }
+
+footer{
+    background-color: var(--main-bg-color-rgba); 
+    padding: 1% 0;
+    text-align: auto;
+    display: grid;
+}
+
+footer:hover { 
+    background-color:rgb(8, 75, 14);
+  }
