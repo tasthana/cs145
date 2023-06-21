@@ -157,15 +157,14 @@
         </section>
 
         <section class="grid-layout">
-            <h2 class="header">Lab 10 - Final Project - Personal Site</h2>
+            <h2 class="header">Final Project - Portfolio  Website</h2>
             <section class="public-files">
                 <h3>Public Files</h3>
-                <p><a href="final/array.php">array.php</a></p>
-                <p><a href="final/detail.php">detail.php</a></p> 
-                <p><a href="final/form.php">form.php</a></p> 
-                <p><a href="final/index.php">index.php (Data Viewer Table) </a></p>  
-                <p><a href="final/ajax.php"> Extracurricular Page</a></p>
-                <p><a href="https://youtu.be/1WVBWNtozRE">Final Presentation Video!</a></p>           
+                <p><a href="final/array.php">Array.php</a></p>
+                <p><a href="final/detail.php">Detail.php</a></p> 
+                <p><a href="final/form.php">Form.php</a></p> 
+                <p><a href="final/index.php">Index.php</a></p>  
+                <p><a href="final/ajax.php"> Ajax.php </a></p>         
             </section>
 
             <section class="supporting-files">
@@ -173,6 +172,7 @@
                 <p><a href="final/css/custom.css">custom.css</a> </p>
                 <p><a href="final/css/custom-phone.css">custom-phone.css</a> </p>
                 <p><a href="final/css/custom-tablet.css">custom-tablet.css</a> </p>
+                <p><a href="final/css/custom-ajax.css">custom-ajax.css</a> </p>
                 
                 <p><a href="final/sql.php">DB SQL Statements</a> </p>
                 <p><a href="final/records.png">DB records</a> </p>
