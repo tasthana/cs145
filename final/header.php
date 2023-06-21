@@ -6,7 +6,8 @@
         <body id="rotating">
             <article>
                 <figure>
-                    <img id="rotatePictures" alt="rotating image of ansel adam prints" src="images/aspens_t.jpg">
+                    <img id="rotatePictures" alt="rotating pictures of friends" src="images/lanky.jpg">
+                    <figcaption>Friends!</figcaption>
                 </figure>
             </article>
         </body>
@@ -15,6 +16,7 @@
             <article>
                 <figure>
                     <img id="rotatePictures2" alt="rotating images food i like" src="images/food1.jpeg">
+                    <figcaption>Food!</figcaption>
                 </figure>
             </article>
         </body>
@@ -23,6 +25,7 @@
             <article>
                 <figure>
                     <img id="rotatePictures3" alt="rotating images family pics" src="images/lilsis.jpg">
+                    <figcaption>Family!</figcaption>
                 </figure>
             </article>
         </body>

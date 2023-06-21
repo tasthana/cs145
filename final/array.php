@@ -16,32 +16,39 @@ $frenchOpenWinners = array(
         <main>
 
 
-        <h1>Lucknow, India</h1>
+        <h1>Job Experience</h1>
 
             <section>
-                <h2>Home</h2>
-                <p>Lucknow, Uttar Pradesh, India is where almost all of my extended family lives. 
-                    It holds a very special place in my heart, as it represents family to me.
-                    Being in America, it can be tough to have little to no connection with the people back home, especially when things are so different in India versus here.
-                    Lucknow, and the state UP, represent a place where all my family gathers and comes together to celebrate and argue. 
-                    I've spent much of my time between there and New Delhi, 
-                    and it has always been a refresher, to be able to sink back into my culture, and be myself fully for a matter of time. 
-                    The food is immaculate, from street vendors in the downtown areas, to the high end restaurants boasting some of the top chefs from around India. 
-                    Considering there are a billion people in India, that is very much an accomplisment on it's own.  
-                  </p>
+                <h2>IXperience Business Developer</h2>
+                <h4> IXperience, January 2023 - April 2023</h4>
+                <p>
+                Ixperience is a company based out of South Africa that hosts summer programs in Cape Town, SA and Lisbon, Portugal. I attended in the summer of '22.
+                Selected as 1 of 10 in a group of 300+ students from the past summer program to represent IXperience's business development projects on the University of Vermont campus.
+                Over 10 signups and 2000+ students reached for the ’23 summer utilizing Google Suite, posters, cards, and in-person presentations to spread the word for IXperience’s ’23 summer programs. 
+                15+ clubs reached with the 3 pending partnerships with IX. Highlights my independent drive. 
+
+                </p>
             </section>
             
             <section>
-                <h2>Things to Do</h2>
-                <p>The past few times that I have visited Lucknow, each time has had its own peak activity that was done. 
-                    This time around, my mom took me to an older part of the city, when her family used to live there.
-                    An area called Hazratganj, fully populated with 1800's construction, the area had its own feel of history, of having seen things that I would only read about.
-                    She showed me the way that she took to her private school, her favorite pastry shop, and shopped for a couple days around the area. 
-                    Mind you, we went this past May, where the temperatures were upwards of 115 degrees. 
-                    It was incredibly hot, and would not recommend it for people who don't do well in heat, or people in general. 
-                    The funny thing is that as soon as people learn that we came from America, 
-                    I would be forced to speak English, because over there, I'm the one with the accent. 
-                    A couple other places to note are listed below :
+                <h2>Software Engineering Intern</h2>
+                <h4>Heden Coworking, June 2022 - August 2022</h4>
+                <p>
+                This job was a full time position in Lisbon, Portugal. I helped develop a unique, custom-built meeting room booking system that integrates across the Heden app and website using Flutter.
+                Worked with Heden’s lead developer from conceptualization to rollout. Allowed Heden to increase efficiency for their members
+                to book faster, cleaning up their website so it takes < 5 clicks in order to book.
+                Assigned numerical id’s to all members of Heden, using Firebase to store back end data for management.
+                Hands on expereience with Flutter and Firebase has allowed me to add these skills to my portfolio. 
+                I would also like to emphasize that I hit the ground running working in a foreign country and would love to continue to do so.
+                </p>
+            </section>
+
+            <section>
+                <h2>Software Engineer/Data Science Mining Intern </h2>
+                <h4> Apex146, March 2021 - June 2021</h4> 
+                <p>
+                This position was located in Burlington, Vermont as I worked remotely for this company. I helped implement proposed solutions using development experience and integration knowledge on Amazon Web Services.
+                I was responsible for development, implementation and maintenance of the organization's NFT-based gaming website. Using Github and Atom for both collaboration and coding. 
                 </p>
             </section>
 

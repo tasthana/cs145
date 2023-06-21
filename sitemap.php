@@ -5,7 +5,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>CS 148 Site Map</title>
+        <title>CS 145 Site Map</title>
         <meta name="author" content="Tushar Asthana">
         <meta name="description" content="A site map to all my assignments for Web Client Programming Course at UVM.">
 
@@ -90,7 +90,7 @@
             <figcaption>Flics at Cascias Beach, Portugal</figcaption>
         </figure>
 
-        <h1>CS 148-<em>L1</em> Summer 2023</h1>
+        <h1>CS 145-<em>L1</em> Summer 2023</h1>
         <h2>Tushar Asthana - Site map</h2>
         <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
         <p><a href="ADMIN/table-viewer.php?getDatabase=">Database Viewer</a></p>
@@ -164,6 +164,7 @@
                 <p><a href="final/detail.php">detail.php</a></p> 
                 <p><a href="final/form.php">form.php</a></p> 
                 <p><a href="final/index.php">index.php (Data Viewer Table) </a></p>  
+                <p><a href="final/ajax.php"> Extracurricular Page</a></p>
                 <p><a href="https://youtu.be/1WVBWNtozRE">Final Presentation Video!</a></p>           
             </section>
 

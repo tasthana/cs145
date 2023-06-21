@@ -36,6 +36,9 @@ header h1{
 header h2 {
     text-align: center;
 }
+main h1{
+    text-align: center;
+}
 
 figure{
     float: left; 
@@ -78,7 +81,7 @@ main{
 
 p{
     text-indent: 5%;
-    text-align: right;
+    text-align: left;
     max-width: 75ch;
 }
 
