@@ -36,12 +36,6 @@
                 included a paper with my full analysis and answer to my question, alongside a 2 minute presentation in class using graphs to prove my point. 
                 </p>
             </section>
-
-            <figure class="go-right">
-                <img alt="Tushar Asthana circa- Summer 2022" src="images/skydive.jpg">
-            <figcaption>Skydiving in Algarve, Portugal</figcaption>
-            </figure>
-
             
 
         </main>

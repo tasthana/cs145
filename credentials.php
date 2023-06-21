@@ -3,8 +3,8 @@
 
 <?php
 
-$password= 'veiTeBL9pfR5' ; 
+$password= 'Cf1S2MVrotlU' ; 
 
 ?>
 
-<!-- fake password atm, just putting it in for formatting -->
+<!-- reader password -->

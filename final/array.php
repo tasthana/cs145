@@ -3,13 +3,6 @@
 <?php
 include 'top.php';
 
-$frenchOpenWinners = array(
-    array(1, 'Hazratganj'),
-    array(2, 'Mishra Park'),
-    array(3, 'Chhota Lmambara'),
-    array(4, 'Aminabad')  
-);
-
 
 ?>
 
@@ -52,54 +45,8 @@ $frenchOpenWinners = array(
                 </p>
             </section>
 
-            <section>
-            <h2>Best <?php echo count($frenchOpenWinners);?> Spots To Visit </h2>
-                <table>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                    </tr>
-                    
-<?php 
-foreach ($frenchOpenWinners as $frenchOpenWinner){
-    print '<tr>';
-    print '<td>' . $frenchOpenWinner[0] . '</td>';
-    print '<td>' . $frenchOpenWinner[1] . '</td>';
-    print '<td>' . $frenchOpenWinner[2] . '</td>';
-    print '<td>' . $frenchOpenWinner[3] . '</td>';
-    print '</tr>' . PHP_EOL;
-} 
-?>
-    </table>
-    </section>
-        <video controls>
-            <source src="https://lh3.googleusercontent.com/6THH-BT_Lw_QC56j_ZuQFJm6nEnlTNNzJIMiAPfQHC3FwRwai3YB8HdStDCpg-sBGUSHP8KrpOR2ghC2dYEx6ZWyg9Yu72AWRct4yfiZ6Ay3nsXkSziW_Rcr8x9LBqbCdYURG25YpA=m18" type="video/mp4">
-        </video>
 
-        <figure class="center">
-                <img alt="Flying" src="images/plane.jpeg">
-            <figcaption>Flying Out!</figcaption>
-            </figure>
-
-            <figure class="go-right">
-                <img alt="Favorite Night Out" src="images/city.jpeg">
-            <figcaption>Favorite Night</figcaption>
-            </figure>
-
-            <figure class="go-left">
-                <img alt="Beach Day" src="images/fam.jpeg">
-            <figcaption>Family!</figcaption>
-            </figure>
-            
-            <figure class="center">
-                <img alt="lil cousin" src="images/lilsis.jpg">
-            <figcaption>Little Cousin is Grown Up!</figcaption>
-            </figure>
-
-            <figure class="go-left">
-                <img alt="Mall" src="images/sax.jpeg">
-            <figcaption>Malls! Shopping!</figcaption>
-            </figure>
+    
     </main>
 
 <?php

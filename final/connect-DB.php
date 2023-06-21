@@ -7,7 +7,7 @@
 $databaseName = 'TASTHANA_labs';
 $dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
 $username = 'tasthana_writer';
-$password = 'A0VqDF7WxN3o'; 
+$password = 'o072RCYY4Q8H'; 
 
 $pdo = new PDO($dsn, $username, $password); 
 ?>

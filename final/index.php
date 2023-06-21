@@ -37,32 +37,7 @@
                 </p>
             </section>
 
-            <section>
-                <table>
-                    <caption>Ranking My Favorites</caption>
 
-                    <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                    </tr>
-                    <?php
-                    $sql = 'SELECT fldRank, fldName FROM tblBestTravels';
-
-                    $statement = $pdo->prepare($sql);
-                    $statement->execute() ;
-
-                    $records = $statement->fetchAll();
-
-                    foreach ($records as $record) {
-                    print '<tr>' ;
-                    print '<td>' . $record['fldRank'] . '</td>'; 
-                    print '<td>' . $record['fldName'] . '</td>'; 
-                    print '<tr>' . PHP_EOL; 
-                    }
-                    ?>
-                </table>
-
-            </section>
 
 
         </main>
