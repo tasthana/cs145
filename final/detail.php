@@ -36,6 +36,22 @@
                 included a paper with my full analysis and answer to my question, alongside a 2 minute presentation in class using graphs to prove my point. 
                 </p>
             </section>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dPV3Wgne5pg" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1WVBWNtozRE" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-f4d7-7a_rQ" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
             
 
         </main>

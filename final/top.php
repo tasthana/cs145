@@ -24,7 +24,7 @@ $pathParts = pathinfo($phpSelf);
     include 'connect-DB.php';
     include 'header.php';
     include 'nav.php'; 
-    include 'footer.php';
+
 ?>
 
 

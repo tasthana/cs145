@@ -164,7 +164,8 @@
                 <p><a href="final/detail.php">Detail.php</a></p> 
                 <p><a href="final/form.php">Form.php</a></p> 
                 <p><a href="final/index.php">Index.php</a></p>  
-                <p><a href="final/ajax.php"> Ajax.php </a></p>         
+                <p><a href="final/ajax.php"> Ajax.php </a></p>  
+                <p><a href="final/JQuery.php"> JQuery.php </a></p>        
             </section>
 
             <section class="supporting-files">
