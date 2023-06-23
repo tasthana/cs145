@@ -5,45 +5,19 @@
 
 <main>
     <h1>SQL</h1>
-    <h2>Create Table for About Page</h2>
-    <p>Create Table SQL</p>
-
-    <pre> 
-    CREATE TABLE tblBestTravels
-    (
-        pmkBestTravels INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        fldRank varchar(20),
-        fldName varchar(50)
-    )
-    </pre>
-
-    <h2>Insert Data</h2>
-    <pre>
-    INSERT INTO tblBestTravels(fldRank, fldName) VALUES 
-    ('1', 'Lisbon / Porto, Portugal'),
-    ('2', 'Lucknow, India'),
-    ('3', 'Hawaii / Maui, USA'),
-    ('4', 'Toronto, Canada'),
-    ('5', 'Singapore, Republic of Singapore')
-    </pre>
-
-    <h3>Select Records</h3>
-    <pre>
-    SELECT fldRank, fldName FROM tblBestTravels
-    </pre>
-
+    
 
     <h2>Create Table for Form Page</h2>
     <pre>
-    CREATE TABLE tblFormAnswers(
+    CREATE TABLE tblForm(
             pmkAnswers int(15)NOT NULL AUTO_INCREMENT PRIMARY KEY,
             fldEmail varchar(50) DEFAULT NULL,
-            fldTips varchar(300) DEFAULT NULL,
-            fldStory varchar(300) DEFAULT NULL,
-            fldcostaRica tinyint(1)DEFAULT 0,
-            fldmaldives tinyint(1)DEFAULT 0,
-            fldpuertoRico tinyint(1) DEFAULT 0,
-            fldCity varchar(30) DEFAULT NULL
+            fldUsername varchar(300) DEFAULT NULL,
+            fldPassword varchar(300) DEFAULT NULL,
+            fldhot tinyint(1)DEFAULT 0,
+            fldsuperHot tinyint(1)DEFAULT 0,
+            fldew tinyint(1) DEFAULT 0,
+            fldHire varchar(30) DEFAULT NULL
             )
     </pre>
 

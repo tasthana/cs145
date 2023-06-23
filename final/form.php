@@ -68,7 +68,9 @@
                 {
                     print '<p class = "wrong"> Email must be wrong, try again! </p> ';
                     $dataIsGood = false; 
-                } if ($city != "Toronto" AND $city != "Hawaii" AND $dedicated != "Singapore")
+                } 
+                
+                if ($city != "Toronto" AND $city != "Hawaii" AND $dedicated != "Singapore")
                 {
                     print '<p class = "wrong"> Please tell me which city to blog about next! </p> ';
                     $dataIsGood = false; 
@@ -108,7 +110,7 @@
                 //save data 
                 if($dataIsGood){
                     try{
-                        $sql ='INSERT INTO tblFormAnswers (fldEmail, fldTips, fldStory, fldcostaRica, fldmaldives, fldpuertoRico, fldCity) 
+                        $sql ='INSERT INTO tblForm (fldEmail, fldTips, fldStory, fldcostaRica, fldmaldives, fldpuertoRico, fldCity) 
                         VALUES (?,?,?,?,?,?,?)';
                         $statement = $pdo->prepare($sql);
                         $data = array($email, $tips, $story, $costaRica, $maldives, $puertoRico, $city);

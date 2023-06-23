@@ -49,6 +49,7 @@ figure{
 article{
     text-align: center;
     float:none;
+    max-height: 10em;
 }
 
 img{
@@ -82,7 +83,7 @@ main{
 p{
     text-indent: 5%;
     text-align: left;
-    max-width: 100ch;
+    max-width: 120ch;
 }
 
 cite{
@@ -297,4 +298,3 @@ video{
     color: #333;
     border: 1em solid whitesmoke;
 }
-
