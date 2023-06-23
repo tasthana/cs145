@@ -8,14 +8,14 @@
     $message = '';
 
     $email = '';
-    $tips = '';
-    $story = '';
+    $username = '';
+    $password = '';
 
-    $costaRica = false;
-    $maldives = false;
-    $puertoRico = false;
+    $hot = false;
+    $superhot = false;
+    $ew = false;
 
-    $city = 'Toronto';
+    $hire = 'yes';
 
     // post back function push thru special chars
     function getData($field) {
@@ -37,7 +37,7 @@
 ?>
 
         <main>
-        <h2>Feedback is always appreciated!</h2>
+
 
             <section>
 
@@ -45,15 +45,15 @@
             if($_SERVER["REQUEST_METHOD"] == 'POST')
             {
                 //sanitize start
-                $email = getData('txtEmail');
-                $tips = getData('txtTips');
-                $story = getData('txtStory');
+                $email = getData('txtUsername');
+                $tips = getData('txtPassword');
+                $story = getData('txtPassword');
 
-                $costaRica = (int) getData('chkCostaRica'); 
-                $maldives = (int) getData('chkMaldives'); 
-                $puertoRico = (int) getData('chkPuertoRico'); 
+                $costaRica = (int) getData('chkHot'); 
+                $maldives = (int) getData('chkSuperHot'); 
+                $puertoRico = (int) getData('chkEw'); 
 
-                $city = getData('radCity');  
+                $city = getData('radHire');  
                 //sanitize end 
 
 
@@ -70,19 +70,19 @@
                     $dataIsGood = false; 
                 } 
                 
-                if ($city != "Toronto" AND $city != "Hawaii" AND $dedicated != "Singapore")
+                if ($city != "Yes" AND $city != "No" AND $dedicated != "Maybe")
                 {
                     print '<p class = "wrong"> Please tell me which city to blog about next! </p> ';
                     $dataIsGood = false; 
                 }
 
-                if($tips =='')
+                if($username =='')
                 {
                     print '<p class = "wrong"> Please type in your tips again. </p> ';
                     $dataIsGood = false;
                 } 
 
-                if($story =='')
+                if($password =='')
                 {
                     print '<p class = "wrong"> Please type in your story again. </p> ';
                     $dataIsGood = false;
@@ -92,14 +92,14 @@
                 // validate check boxes
                 $totalChecked = 0; 
 
-                if($costaRica != 1) $costaRica = 0;
-                $totalChecked += $costaRica; 
+                if($hot != 1) $hot = 0;
+                $totalChecked += $hot; 
 
-                if($maldives != 1) $maldives = 0;
-                $totalChecked += $maldives; 
+                if($superhot != 1) $superhot = 0;
+                $totalChecked += $superhot; 
 
-                if($puertoRico != 1) $puertoRico = 0;
-                $totalChecked += $puertoRico; 
+                if($ew != 1) $ew = 0;
+                $totalChecked += $ew; 
 
                 if($totalChecked == 0)
                 {
@@ -110,10 +110,10 @@
                 //save data 
                 if($dataIsGood){
                     try{
-                        $sql ='INSERT INTO tblForm (fldEmail, fldTips, fldStory, fldcostaRica, fldmaldives, fldpuertoRico, fldCity) 
+                        $sql ='INSERT INTO tblForm (fldEmail, fldUsername, fldPassword, fldhot, fldsuperHot, fldew, fldHire) 
                         VALUES (?,?,?,?,?,?,?)';
                         $statement = $pdo->prepare($sql);
-                        $data = array($email, $tips, $story, $costaRica, $maldives, $puertoRico, $city);
+                        $data = array($email, $username, $password, $hot, $superhot, $ew, $hire);
 
                         if($statement->execute($data))
                         {
@@ -166,65 +166,65 @@
                         </p>
                     </fieldset>
 
-                    <fieldset class="tips">
-                        <legend>Any suggestions or tips?</legend>
+                    <fieldset class="password">
+                        <legend>Choose your username:</legend>
                         <p>
-                            <label class="tips" for="txtTips" ></label> 
-                            <input id="txtTips" maxlength="300" name="txtTips"
+                            <label class="password" for="txtUsername" ></label> 
+                            <input id="txtUsername" maxlength="300" name="txtUsername"
                             onfocus="this.select()" tabindex="110" type="text" value="<?php print $tips; ?>"
                             required>
                         </p>
                     </fieldset>
 
-                    <fieldset class="story">
-                        <legend>Drop your best travel story below!</legend>
+                    <fieldset class="password">
+                        <legend>Password:</legend>
                         <p>
-                            <label class="story" for="txtStory" ></label> 
-                            <input id="txtStory" maxlength="300" name="txtStory"
+                            <label class="password" for="txtPassword" ></label> 
+                            <input id="txtPassword" maxlength="300" name="txtPassword"
                             onfocus="this.select()" tabindex="110" type="text" value="<?php print $story; ?>"
                             required>
                         </p>
                     </fieldset>
 
                     <fieldset class="checkbox">
-                        <legend>What's your dream island vacation?</legend>
+                        <legend>How attractive is Tushar?</legend>
                         <p>
-                            <input id="chkCostaRica" name="chkCostaRica" tabindex="510"
-                            type="checkbox" value="1" <?php if($costaRica) print 'checked'; ?>>
-                            <label for="chkCostaRica">Costa Rica</label>
+                            <input id="chkHot" name="chkHot" tabindex="510"
+                            type="checkbox" value="1" <?php if($hot) print 'checked'; ?>>
+                            <label for="chkHot">Hot</label>
                         </p>
 
                         <p>
-                            <input id="chkMaldives" name="chkMaldives" tabindex="520"
-                            type="checkbox" value="1" <?php if($maldives) print 'checked'; ?>>
-                            <label for="chkMaldives">Maldives</label>
+                            <input id="chkSuperHot" name="chkSuperHot" tabindex="520"
+                            type="checkbox" value="1" <?php if($superhot) print 'checked'; ?>>
+                            <label for="chkSuperHot">Super Hot</label>
                         </p>
 
                         <p>
-                            <input id="chkPuertoRico" name="chkPuertoRico" tabindex="530"
-                            type="checkbox" value="1" <?php if($puertoRico) print 'checked'; ?>>
-                            <label for="chkPuertoRico">Puerto Rico</label>
+                            <input id="chkEw" name="chkEw" tabindex="530"
+                            type="checkbox" value="1" <?php if($ew) print 'checked'; ?>>
+                            <label for="chkEw">Ew</label>
                         </p>
                     </fieldset>
 
                     <fieldset class="radio">
-                        <legend>Which city should I post next?</legend>
+                        <legend>Would you hire Tushar?</legend>
                         <p>
-                            <input type="radio" id="radCityToronto"
-                            name="radCity" value="Toronto" tabindex="410" required <?php if($radCity == "Toronto") print 'checked';?>>
-                            <label class="radio-field" for="radCityToronto">Toronto</label>
+                            <input type="radio" id="radHireYes"
+                            name="radHire" value="Yes" tabindex="410" required <?php if($radCity == "Yes") print 'checked';?>>
+                            <label class="radio-field" for="radHireYes">Yes!</label>
                         </p>
 
                         <p>
-                            <input type="radio" id="radCityHawaii"
-                            name="radCity" value="Hawaii" tabindex="420" required <?php if($radCity == "Hawaii") print 'checked';?>>
-                            <label class="radio-field" for="radCityHawaii">Hawaii</label>
+                            <input type="radio" id="radHireMaybe"
+                            name="radHire" value="Maybe" tabindex="420" required <?php if($radCity == "Maybe") print 'checked';?>>
+                            <label class="radio-field" for="radHireMaybe">Maybe</label>
                         </p>
 
                         <p>
-                            <input type="radio" id="radCitySingapore"
-                            name="radCity" value="Singapore" tabindex="430" required <?php if($radCity == "Singapore") print 'checked';?>>
-                            <label class="radio-field" for="radCitySingapore">Singapore</label>
+                            <input type="radio" id="radHireNo"
+                            name="radHire" value="No" tabindex="430" required <?php if($radCity == "No") print 'checked';?>>
+                            <label class="radio-field" for="radHireNo">No!</label>
                         </p>
 
                         <fieldset class="button">
