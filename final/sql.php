@@ -32,13 +32,6 @@
     </pre>
 
 
-    <pre>
-    <h3>Select Statement for Data in Form Page</h3>
-    SELECT fldEmail, fldTips, fldStory, fldcostaRica, fldmaldives, fldpuertoRico, fldCity FROM tblFormAnswers
-    </pre>
-
-
-
 
 
     </main>

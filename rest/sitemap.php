@@ -92,7 +92,7 @@
 
         <h1>CS 145-<em>L1</em> Summer 2023</h1>
         <h2>Tushar Asthana - Site map</h2>
-        <p><a href="ADMIN/admin.php">My Admin Folder</a></p>
+        <p><a href="ADMIN/code-view.php">My Admin Folder</a></p>
         <p><a href="ADMIN/table-viewer.php?getDatabase=">Database Viewer</a></p>
 
             <script>

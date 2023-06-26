@@ -3,7 +3,7 @@
     <h1>Tushar Asthana's Portfolio Website </h1>
     <h2>Overview of Projects and Jobs!</h2>
     <script src="rotating-images.js" async></script>
-        <body id="rotating">
+        <body>
             <article>
                 <figure>
                     <img id="rotatePictures" alt="rotating pictures of friends" src="images/lanky.jpg">

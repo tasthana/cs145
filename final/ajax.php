@@ -9,10 +9,20 @@
     <meta name="description" content="Using Ajax to load simple text stories">
 
 <script>
-    window.addEventListener("load", (event) => { loadDoc('first.html'); });
+    window.addEventListener("load", (event) => { loadDoc('whitewashed.txt'); });
 
     var ajax;
 
+    function state_Change(url) {
+        if (ajax.readyState == 4) { // 4 = "loaded"
+            if (ajax.status == 200) { // 200 = "OK"
+                document.getElementById('putTextHere').innerHTML = ajax.responseText;
+            } else {
+                alert("Problem retrieving data:" + ajax.statusText);
+            }
+        }
+    }
+    
     // this function gets the file specified in the url
     function loadDoc(url) {
         ajax = null;
@@ -26,15 +36,7 @@
         }
     }
 
-    function state_Change() {
-        if (ajax.readyState == 4) { // 4 = "loaded"
-            if (ajax.status == 200) { // 200 = "OK"
-                document.getElementById('putTextHere').innerHTML = ajax.responseText;
-            } else {
-                alert("Problem retrieving data:" + ajax.statusText);
-            }
-        }
-    }
+    
 </script>
 </head>
 

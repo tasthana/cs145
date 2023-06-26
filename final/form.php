@@ -161,9 +161,9 @@
                 <form action="#" id= "frmNext" method="post">
 
                     <fieldset class="contact">
-                        <legend>What's your email?</legend>
+
                         <p>
-                            <label class="required" for="txtEmail" >Email</label> 
+                            <label class="required" for="txtEmail" >What's your email?</label> 
                             <input id="txtEmail" maxlength="50" name="txtEmail"
                             onfocus="this.select()" tabindex="110" type="text" value="<?php print $email; ?>"
                             required>
