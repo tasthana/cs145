@@ -45,15 +45,15 @@
             if($_SERVER["REQUEST_METHOD"] == 'POST')
             {
                 //sanitize start
-                $email = getData('txtUsername');
-                $tips = getData('txtPassword');
-                $story = getData('txtPassword');
+                $email = getData('txtEmail');
+                $username = getData('txtUsername');
+                $password = getData('txtPassword');
 
-                $costaRica = (int) getData('chkHot'); 
-                $maldives = (int) getData('chkSuperHot'); 
-                $puertoRico = (int) getData('chkEw'); 
+                $hot = (int) getData('chkHot'); 
+                $superhot = (int) getData('chkSuperHot'); 
+                $ew = (int) getData('chkEw'); 
 
-                $city = getData('radHire');  
+                $hire = getData('radHire');  
                 //sanitize end 
 
 
@@ -70,21 +70,21 @@
                     $dataIsGood = false; 
                 } 
                 
-                if ($city != "Yes" AND $city != "No" AND $dedicated != "Maybe")
+                if ($hire != "Yes" AND $hire != "No" AND $hire != "Maybe")
                 {
-                    print '<p class = "wrong"> Please tell me which city to blog about next! </p> ';
+                    print '<p class = "wrong"> Tell me if you would hire me! </p> ';
                     $dataIsGood = false; 
                 }
 
                 if($username =='')
                 {
-                    print '<p class = "wrong"> Please type in your tips again. </p> ';
+                    print '<p class = "wrong"> Please type in your username again. </p> ';
                     $dataIsGood = false;
                 } 
 
                 if($password =='')
                 {
-                    print '<p class = "wrong"> Please type in your story again. </p> ';
+                    print '<p class = "wrong"> Please type in your password again. </p> ';
                     $dataIsGood = false;
                 } 
                 //end validation
@@ -108,12 +108,16 @@
                 }
 
                 //save data 
+
                 if($dataIsGood){
+
                     try{
                         $sql ='INSERT INTO tblForm (fldEmail, fldUsername, fldPassword, fldhot, fldsuperHot, fldew, fldHire) 
                         VALUES (?,?,?,?,?,?,?)';
-                        $statement = $pdo->prepare($sql);
                         $data = array($email, $username, $password, $hot, $superhot, $ew, $hire);
+                        $sqlText = $sql;
+
+                        $statement = $pdo->prepare($sql);
 
                         if($statement->execute($data))
                         {

@@ -21,12 +21,13 @@
             )
     </pre>
 
-    <pre>
+    
     <h3>Insert Statement for Table in Form Page</h3>
 
-    $sql ='INSERT INTO tblFormAnswers (fldEmail, fldTips, fldStory, fldcostaRica, fldmaldives, fldpuertoRico, fldCity) VALUES (?,?,?,?,?,?,?)';
+    <pre>
+        INSERT INTO tblForm (fldEmail, fldUsername, fldPassword, fldhot, fldsuperHot, fldew, fldHire) VALUES (?,?,?,?,?,?,?)';
         $statement = $pdo->prepare($sql);
-        $data = array($email, $tips, $story, $costaRica, $maldives, $puertoRico, $city);
+        $data = array($email, $username, $password, $hot, $superhot, $ew, $hire);
 
     </pre>
 

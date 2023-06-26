@@ -4,7 +4,7 @@
 
 <?php
 // mistakes are misspelling database name , username, or passwords
-$databaseName = 'TASTHANA_labs';
+$databaseName = 'TASTHANA_cs145table';
 $dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
 $username = 'tasthana_writer';
 $password = 'o072RCYY4Q8H'; 
