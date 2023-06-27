@@ -1,6 +1,6 @@
 
 
-const form = document.querySelector("form");
+const form = document.querySelector("contact");
 const email = document.getElementById("txtEmail");
 const error = email.nextElementSibling;
 

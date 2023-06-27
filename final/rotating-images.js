@@ -1,7 +1,7 @@
 
 
 //fill an array of images
-var rotImages = new Array("images/skydive.jpg","images/sebbie.jpg","images/lanky.jpeg");
+var rotImages = new Array("images/skydivedos.jpg","images/lanky.jpeg","images/sath.jpeg");
 var thisPic = 0;
 
 
@@ -45,7 +45,7 @@ window.addEventListener('load', rotate2(), false);
 
 
 //fill an array of images
-var images = new Array("images/family.jpeg","images/sax.jpeg","images/sath.jpeg");
+var images = new Array("images/family.jpeg","images/sax.jpeg","images/fam.jpeg");
 var thisPic3 = 0;
 
 
