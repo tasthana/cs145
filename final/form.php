@@ -1,3 +1,7 @@
+<script src="email.js" async></script>
+<script src="username.js" async></script>
+<script src="password.js" async></script>
+
 <?php
     include 'top.php';
 
@@ -37,7 +41,6 @@
 ?>
 
         <main>
-
 
             <section>
 
@@ -103,7 +106,7 @@
 
                 if($totalChecked == 0)
                 {
-                    print '<p class="wrong"> Please choose one place! </p>';
+                    print '<p class="wrong"> Please choose an answer!! </p>';
                     $dataIsGood = false; 
                 }
 
@@ -158,7 +161,6 @@
 
                 <h3>Fill out the information to contact me, and I'll get back to you as soon as I can :)</h3>
 
-                <script src="email.js" async></script>
 
                 <form action="#" id= "frmNext" method="post">
 
@@ -172,12 +174,12 @@
                         </p>
                     </fieldset>
 
-                    <fieldset class="username">
+                    <fieldset class="contact2">
                         <legend>Choose your username:</legend>
                         <p>
-                            <label class="password" for="txtUsername" ></label> 
+                            <label class="required" for="txtUsername" ></label> 
                             <input id="txtUsername" maxlength="300" name="txtUsername"
-                            onfocus="this.select()" tabindex="110" type="text" value="<?php print $tips; ?>"
+                            onfocus="this.select()" tabindex="110" type="text" value="<?php print $username; ?>"
                             required>
                         </p>
                     </fieldset>
@@ -185,15 +187,33 @@
                     <fieldset class="password">
                         <legend>Password:</legend>
                         <p>
-                            <label class="password" for="txtPassword" ></label> 
-                            <input id="txtPassword" maxlength="300" name="txtPassword"
-                            onfocus="this.select()" tabindex="110" type="text" value="<?php print $story; ?>"
+                            <label class="contact3" for="txtPassword" ></label> 
+                            <input id="txtPassword" maxlength="300" name="txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                            onfocus="this.select()" tabindex="110" type="text" value="<?php print $password; ?>"
                             required>
+                            <h5> Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</h5>
                         </p>
                     </fieldset>
 
                     <fieldset class="checkbox">
                         <legend>How attractive is Tushar?</legend>
+                        <script>
+                            function validate(){
+                            // get the checkbox element from the DOM using the getElementId function
+                                let checkbox=document.getElementById("checkbox");
+                            // get the text element to display the status of checkbox
+                                let text=document.getElementById("confirm");
+                            // use the checked property to check if the checkbox is checked
+                                if (checkbox.checked)
+                                {
+                                    // display result by assigning to innerHTML of the text element.
+                                    text.innerHTML="Thank you for accepting the agreement";
+                                    }
+                                else{
+                                    text.innerHTML = "Please accept the agreement to proceed";
+                                    }
+                                }
+                        </script>
                         <p>
                             <input id="chkHot" name="chkHot" tabindex="510"
                             type="checkbox" value="1" <?php if($hot) print 'checked'; ?>>
