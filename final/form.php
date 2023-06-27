@@ -158,6 +158,8 @@
 
                 <h3>Fill out the information to contact me, and I'll get back to you as soon as I can :)</h3>
 
+                <script src="email.js" async></script>
+
                 <form action="#" id= "frmNext" method="post">
 
                     <fieldset class="contact">
@@ -170,7 +172,7 @@
                         </p>
                     </fieldset>
 
-                    <fieldset class="password">
+                    <fieldset class="username">
                         <legend>Choose your username:</legend>
                         <p>
                             <label class="password" for="txtUsername" ></label> 
