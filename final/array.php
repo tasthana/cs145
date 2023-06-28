@@ -51,7 +51,7 @@ include 'top.php';
                 <p>
                 This job was a full time position in Lisbon, Portugal. I helped develop a unique, custom-built meeting room booking system that integrates across the Heden app and website using Flutter.
                 Worked with Heden’s lead developer from conceptualization to rollout. Allowed Heden to increase efficiency for their members
-                to book faster, cleaning up their website so it takes < 5 clicks in order to book.
+                to book faster, cleaning up their website so it takes &lt5 clicks in order to book.
                 Assigned numerical id’s to all members of Heden, using Firebase to store back end data for management.
                 Hands on expereience with Flutter and Firebase has allowed me to add these skills to my portfolio. 
                 I would also like to emphasize that I hit the ground running working in a foreign country and would love to continue to do so.
@@ -68,22 +68,20 @@ include 'top.php';
             </section>
 
             <a href="https://www.apex146.com">
-            <img src="images/apex.png">
+            <img src="images/apex.png" alt = "apex146 logo" >
             </a>
 
             <a href="https://heden.co">
-            <img src="images/heden.png">
+            <img src="images/heden.png" alt = "heden logo">
             </a>
 
             <a href="https://ixperience.co">
-            <img src="images/iXlogo.png">
+            <img src="images/iXlogo.png" alt = "iX logo">
             </a>
 
             <a href="https://www.llbean.com">
-            <img src="images/bean.png">
+            <img src="images/bean.png" alt = "LL Bean logo">
             </a>
-
-
 
     
     </main>

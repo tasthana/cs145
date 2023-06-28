@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <nav>
     <a class= "<?php
     if ($pathParts['filename'] == "index"){
@@ -29,5 +29,11 @@
         print 'activePage';
 }
     ?>" href="ajax.php">Extracurriculars</a>
+
+<a class= "<?php
+    if ($pathParts['filename'] == "jquery"){
+        print 'activePage';
+}
+    ?>" href="jquery.js">JQuery</a>
 
 </nav>

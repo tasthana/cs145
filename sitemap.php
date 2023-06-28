@@ -165,8 +165,8 @@
                 <p><a href="final/form.php">Form.php</a></p> 
                 <p><a href="final/index.php">Index.php</a></p>  
                 <p><a href="final/ajax.php"> Ajax.php </a></p>  
-                <p><a href="final/JQuery.php"> JQuery.php </a></p>       
-                <p><a href="final/form2.php"> Form2 </a></p>        
+                <p><a href="final/jquery.js"> JQuery.js </a></p>
+     
             </section>
 
             <section class="supporting-files">
@@ -175,9 +175,14 @@
                 <p><a href="final/css/custom-phone.css">custom-phone.css</a> </p>
                 <p><a href="final/css/custom-tablet.css">custom-tablet.css</a> </p>
                 <p><a href="final/css/custom-ajax.css">custom-ajax.css</a> </p>
+
+                <p><a href="final/email.js"> Email.js </a></p>
+                <p><a href="final/password.js"> Password.js </a></p>
+                <p><a href="final/username.js"> Username.js </a></p>
+                <p><a href="final/rotating-images.js"> Rotating-Images.js </a></p>
                 
                 <p><a href="final/sql.php">DB SQL Statements</a> </p>
-                <p><a href="final/records.png">DB records</a> </p>
+                <p><a href="final/images/records.png">DB records</a> </p>
                 
                 <p><a href="final/footer.php">footer.php</a></p>
                 <p><a href="final/header.php">header.php</a></p>
@@ -190,7 +195,9 @@
             </section>
 
             <section class="grader-notes">
-                <h3>Notes to grader</h3>
+                <h3>Linked JS files are for form validation and rotating pictures under supporting documents. Ajax & JQuery files are under public files.
+                    Also, did not have an enormous amount of commits because I used the existing CS 008 website as a base to build the CS 145 website.
+                </h3>
                 <p></p>
             </section>
         </section>

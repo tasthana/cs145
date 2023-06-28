@@ -1,8 +1,25 @@
+<!DOCTYPE html>
+
+<!-- javascript validation files  -->
 <script src="email.js" async></script>
 <script src="username.js" async></script>
 <script src="password.js" async></script>
+<!-- <script src="checkbox.js" async></script> -->
+<script>
+    let output= document.getElementbyId("radchk")
+    function getSelectedRadio() {
+         var selected = document.querySelector(
+         'input[name="radHire"]:checked');
+         if (selected) {
+            output.innerHTML += "Radio button is selected."
+         } else {
+            output.innerHTML += "Not any radio button is selected!"
+         }
+      }
+</script>
 
 <?php
+
     include 'top.php';
 
     // initialize all values 
@@ -128,8 +145,8 @@
 
                             //email code 
                             $to = $email;
-                            $from = 'Personal Travel Blog <tasthana@uvm.edu>';
-                            $subject = 'Confirmation Email'; 
+                            $from = 'Tushar"s ePortfolio  <tasthana@uvm.edu>';
+                            $subject = 'Confirmation Email from Tushar!'; 
 
                             $headers = "MIME-Version: 1.0\r\n";
                             $headers .= "Content-type: text/html; charset=utf-8\r\n";
@@ -197,23 +214,7 @@
 
                     <fieldset class="checkbox">
                         <legend>How attractive is Tushar?</legend>
-                        <script>
-                            function validate(){
-                            // get the checkbox element from the DOM using the getElementId function
-                                let checkbox=document.getElementById("checkbox");
-                            // get the text element to display the status of checkbox
-                                let text=document.getElementById("confirm");
-                            // use the checked property to check if the checkbox is checked
-                                if (checkbox.checked)
-                                {
-                                    // display result by assigning to innerHTML of the text element.
-                                    text.innerHTML="Thank you for accepting the agreement";
-                                    }
-                                else{
-                                    text.innerHTML = "Please accept the agreement to proceed";
-                                    }
-                                }
-                        </script>
+                        
                         <p>
                             <input id="chkHot" name="chkHot" tabindex="510"
                             type="checkbox" value="1" <?php if($hot) print 'checked'; ?>>
@@ -233,7 +234,7 @@
                         </p>
                     </fieldset>
 
-                    <fieldset class="radio">
+                    <fieldset class="radio" id= radchk>
                         <legend>Would you hire Tushar?</legend>
                         <p>
                             <input type="radio" id="radHireYes"
@@ -255,7 +256,7 @@
 
                         <fieldset class="button">
                             <input id="btnSubmit" name="btnSubmit" tabindex="900"
-                            type="submit" value="Submit">
+                            type="submit" value="Submit" onclick="getSelectedRadio()">
                         </fieldset>
                     </fieldset> 
 
