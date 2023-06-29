@@ -151,7 +151,7 @@
 
                             if($mailSent)
                             {
-                                print "<p> A copy has been emailed to you for your records!</p>";
+                                print "<p style='color: red;'> A copy has been emailed to you for your records!</p>";
                             }
 
                         } else{
