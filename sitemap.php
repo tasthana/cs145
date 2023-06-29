@@ -165,7 +165,7 @@
                 <p><a href="final/form.php">Form.php</a></p> 
                 <p><a href="final/index.php">Index.php</a></p>  
                 <p><a href="final/ajax.php"> Ajax.php </a></p>  
-                <p><a href="final/jquery.js"> JQuery.js </a></p>
+                <p><a href="final/jquery.php"> JQuery.js </a></p>
      
             </section>
 

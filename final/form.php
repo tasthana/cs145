@@ -4,19 +4,8 @@
 <script src="email.js" async></script>
 <script src="username.js" async></script>
 <script src="password.js" async></script>
-<!-- <script src="checkbox.js" async></script> -->
-<script>
-    let output= document.getElementbyId("radchk")
-    function getSelectedRadio() {
-         var selected = document.querySelector(
-         'input[name="radHire"]:checked');
-         if (selected) {
-            output.innerHTML += "Radio button is selected."
-         } else {
-            output.innerHTML += "Not any radio button is selected!"
-         }
-      }
-</script>
+<script src="checkbox.js" async></script>
+<script src="radiobox.js" async></script>
 
 <?php
 
@@ -90,12 +79,6 @@
                     $dataIsGood = false; 
                 } 
                 
-                if ($hire != "Yes" AND $hire != "No" AND $hire != "Maybe")
-                {
-                    print '<p class = "wrong"> Tell me if you would hire me! </p> ';
-                    $dataIsGood = false; 
-                }
-
                 if($username =='')
                 {
                     print '<p class = "wrong"> Please type in your username again. </p> ';
@@ -107,7 +90,6 @@
                     print '<p class = "wrong"> Please type in your password again. </p> ';
                     $dataIsGood = false;
                 } 
-                //end validation
 
                 // validate check boxes
                 $totalChecked = 0; 
@@ -123,9 +105,16 @@
 
                 if($totalChecked == 0)
                 {
-                    print '<p class="wrong"> Please choose an answer!! </p>';
+                    // print '<p class="wrong"> Please choose an answer!! </p>';
                     $dataIsGood = false; 
                 }
+
+                if ($hire != "Yes" AND $hire != "No" AND $hire != "Maybe")
+                {
+                    // print '<p class = "wrong"> Tell me if you would hire me! </p> ';
+                    $dataIsGood = false; 
+                }
+                //end validation
 
                 //save data 
 
@@ -238,25 +227,25 @@
                         <legend>Would you hire Tushar?</legend>
                         <p>
                             <input type="radio" id="radHireYes"
-                            name="radHire" value="Yes" tabindex="410" required <?php if($radCity == "Yes") print 'checked';?>>
+                            name="radHire" value="Yes" tabindex="410"  <?php if($hire == "Yes") print 'checked';?>>
                             <label class="radio-field" for="radHireYes">Yes!</label>
                         </p>
 
                         <p>
                             <input type="radio" id="radHireMaybe"
-                            name="radHire" value="Maybe" tabindex="420" required <?php if($radCity == "Maybe") print 'checked';?>>
+                            name="radHire" value="Maybe" tabindex="420"  <?php if($hire == "Maybe") print 'checked';?>>
                             <label class="radio-field" for="radHireMaybe">Maybe</label>
                         </p>
 
                         <p>
                             <input type="radio" id="radHireNo"
-                            name="radHire" value="No" tabindex="430" required <?php if($radCity == "No") print 'checked';?>>
+                            name="radHire" value="No" tabindex="430"  <?php if($hire == "No") print 'checked';?>>
                             <label class="radio-field" for="radHireNo">No!</label>
                         </p>
 
                         <fieldset class="button">
                             <input id="btnSubmit" name="btnSubmit" tabindex="900"
-                            type="submit" value="Submit" onclick="getSelectedRadio()">
+                            type="submit" value="Submit" onclick="return Validate()" onclick="return Validate2()">
                         </fieldset>
                     </fieldset> 
 
