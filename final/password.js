@@ -10,14 +10,11 @@ const error3 = password.nextElementSibling;
 const passwordRegExp =
 "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}";
 
-// Now we can rebuild our validation constraint
-// Because we do not rely on CSS pseudo-class, we have to
-// explicitly set the valid/invalid class on our password field
 window.addEventListener("load", () => {
-  // Here, we test if the field is empty (remember, the field is not required)
-  // If it is not, we check if its content is a well-form3ed password address.
+  
   const isValid = password.value.length === 0 || passwordRegExp.test(password.value);
   password.className = isValid ? "valid" : "invalid";
+  
 });
 
 // This defines what happens when the user types in the field

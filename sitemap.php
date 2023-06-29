@@ -201,9 +201,9 @@
                 <h3> Notes to Graders</h3>
                 <p>Linked JS files are for form validation and rotating pictures under supporting documents. Ajax file is under public files.
                     Also, did not have an enormous amount of commits because I used the existing CS 008 website as a base to build the CS 145 website.
-                    JQuery used to add a hide button on detail page, as the videos may add an overwhelming amount of visual input.
+                    JQuery used to add a hide button on detail page, as the videos may add an overwhelming amount of visual input, so it affects the DOM. 
                     I didn't use a specific source to get the fucntion(s), but used bits and pieces and put them all together, including Bob's lectures.
-                    All links work, database is connected, Admin folder works, and all css validation errors(around 15 total errors over 9 pages) are random one liners that 
+                    All links work, database is connected, admin folder works, and all css validation errors(around 15 total errors over 9 pages) are random one liners that 
                     i couldn't fix. 
                 </p>
             </section>

@@ -7,12 +7,7 @@ const error2 = user.nextElementSibling;
 // As per the HTML Specification
 const userRegExp = /^[a-z\d]+$/i;
 
-// Now we can rebuild our validation constraint
-// Because we do not rely on CSS pseudo-class, we have to
-// explicitly set the valid/invalid class on our user field
 window.addEventListener("load", () => {
-  // Here, we test if the field is empty (remember, the field is not required)
-  // If it is not, we check if its content is a well-form22ed user address.
   const isValid = user.value.length === 0 || userRegExp.test(user.value);
   user.className = isValid ? "valid" : "invalid";
 });

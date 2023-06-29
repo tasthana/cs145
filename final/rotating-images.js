@@ -4,12 +4,9 @@
 var rotImages = new Array("images/skydivedos.jpg","images/lanky.jpeg","images/sath.jpeg");
 var thisPic = 0;
 
-
-// this functions delays for three seconds and then changes the picture being
-// displayed
 function rotate() {
     thisPic++;
-    if (thisPic == rotImages.length) {  //reach the end and start at the first one
+    if (thisPic == rotImages.length) {  
         thisPic = 0;
     }
     document.getElementById("rotatePictures").src = rotImages[thisPic];
@@ -26,12 +23,9 @@ window.addEventListener('load', rotate(), false);
 var image = new Array("images/food1.jpeg","images/food2.jpeg","images/food3.jpeg");
 var thisPic2 = 0;
 
-
-// this functions delays for three seconds and then changes the picture being
-// displayed
 function rotate2() {
     thisPic2++;
-    if (thisPic2 == image.length) {  //reach the end and start at the first one
+    if (thisPic2 == image.length) { 
         thisPic2 = 0;
     }
     document.getElementById("rotatePictures2").src = image[thisPic];
@@ -48,9 +42,6 @@ window.addEventListener('load', rotate2(), false);
 var images = new Array("images/family.jpeg","images/sax.jpeg","images/fam.jpeg");
 var thisPic3 = 0;
 
-
-// this functions delays for three seconds and then changes the picture being
-// displayed
 function rotate3() {
     thisPic3++;
     if (thisPic3 == images.length) {  //reach the end and start at the first one
