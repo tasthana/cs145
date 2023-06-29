@@ -2,6 +2,7 @@
     <!-- logo image would go here -->
     <h1>Tushar Asthana's Portfolio Website </h1>
     <h2>Overview of Projects and Jobs!</h2>
+    
     <script src="rotating-images.js" async></script>
             <article>
                 <figure>

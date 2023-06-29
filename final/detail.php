@@ -2,8 +2,22 @@
     include 'top.php';
 ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("#hide").click(function(){
+        $("iframe").hide();
+    });
+    $("#show").click(function(){
+        $("iframe").show();
+    });
+    });
+</script>
+
+
         <main>
             <h1>Projects</h1>
+
             
             <section>
                 <h2>Magic Mirror Project</h2>
@@ -11,7 +25,8 @@
                 This project was a final in my CS 121 (Computer Organizing) class, which used Linux terminal and a Raspberry Pi to code. 
                 Using base code from the Magic Mirror GitHub, my partner and I created 3 new modules customizable by the user.
                 Working in Linux to allow seamless implementation through a Raspberry Pi 4 to project on screen, and designs to create a
-                working mirror.
+                working mirror. 
+                <a href="https://docs.google.com/document/d/1-vfp00XKZUh5r9Bf9F7TaeGr5i_xVfxKgy5nN-Hfktg/edit?usp=sharing"> Project Proposal </a>
                 </p>
             </section>
             
@@ -22,6 +37,8 @@
                 three pages, an introduction page, and country's that I have visited page, and a form. I used HTML5 to create the structure of the page, 
                 CSS to style it, and PHP to include some backend features of storage for my form page and tables that I had displayed. My form would also send 
                 an email with a heartfelt response to whomever filled out the form! 
+                <a href="https://github.com/tasthana/CS-008"> Github Repo </a>
+
                 </p>
             </section>
 
@@ -34,23 +51,36 @@
                 combination of angles and brain activity to provide accurate data for the question behind my final project. Is more legs better for speed or not? 
                 I modeled my robot after a spider, and created three variants, a 4 legged robot, a 6 legged one, and an 8 legged robot. The final presentation 
                 included a paper with my full analysis and answer to my question, alongside a 2 minute presentation in class using graphs to prove my point. 
+                <a href="https://github.com/tasthana/cs206/tree/finalProject"> Github Repo </a>
                 </p>
             </section>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dPV3Wgne5pg" 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
+            <section>
+            <h5>Hide videos!</h5>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+            </section>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1WVBWNtozRE" 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-f4d7-7a_rQ" 
-                title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-            </iframe>
+            <section>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dPV3Wgne5pg" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1WVBWNtozRE" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-f4d7-7a_rQ" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+
+
+            </section>
             
 
         </main>

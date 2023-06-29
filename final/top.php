@@ -7,7 +7,7 @@ $pathParts = pathinfo($phpSelf);
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title> Travel with Me! </title>
+        <title> ePortfolio! </title>
         <meta name="author" content="Tushar Asthana">
         <meta name="description" content="A personal website that takes you through life, my experiences in travelling and and learning about the world! ">
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">

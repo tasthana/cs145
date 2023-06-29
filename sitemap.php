@@ -165,7 +165,6 @@
                 <p><a href="final/form.php">Form.php</a></p> 
                 <p><a href="final/index.php">Index.php</a></p>  
                 <p><a href="final/ajax.php"> Ajax.php </a></p>  
-                <p><a href="final/jquery.php"> JQuery.js </a></p>
      
             </section>
 
@@ -176,10 +175,13 @@
                 <p><a href="final/css/custom-tablet.css">custom-tablet.css</a> </p>
                 <p><a href="final/css/custom-ajax.css">custom-ajax.css</a> </p>
 
-                <p><a href="final/email.js"> Email.js </a></p>
-                <p><a href="final/password.js"> Password.js </a></p>
-                <p><a href="final/username.js"> Username.js </a></p>
+                <p><a href="final/email.js"> Email-Validation.js </a></p>
+                <p><a href="final/password.js"> Password-Validation.js </a></p>
+                <p><a href="final/username.js"> Username-Validation.js </a></p>
                 <p><a href="final/rotating-images.js"> Rotating-Images.js </a></p>
+                <p><a href="final/checkbox.js"> Checkbox-Validation.js </a></p>
+                <p><a href="final/radiobox.js"> Radiobox-Validation.js </a></p>
+
                 
                 <p><a href="final/sql.php">DB SQL Statements</a> </p>
                 <p><a href="final/images/records.png">DB records</a> </p>
@@ -189,16 +191,21 @@
                 <p><a href="final/nav.php">nav.php</a></p>
                 <p><a href="final/top.php">top.php</a></p>
                 
-                <p><a href="final/images/desktop-wireframe.jpg">wireframe desktop</a></p>
-                <p><a href="final/images/phone-wireframe.jpg">wireframe phone</a></p>
-                <p><a href="final/images/tablet-wireframe.jpg">wireframe tablet</a></p>
+                <p><a href="final/images/wireframe-desktop.jpeg">wireframe desktop</a></p>
+                <p><a href="final/images/wireframe-phone.jpeg">wireframe phone</a></p>
+                <p><a href="final/images/wireframe-tablet.jpeg">wireframe tablet</a></p>
             </section>
 
+
             <section class="grader-notes">
-                <h3>Linked JS files are for form validation and rotating pictures under supporting documents. Ajax & JQuery files are under public files.
+                <h3> Notes to Graders</h3>
+                <p>Linked JS files are for form validation and rotating pictures under supporting documents. Ajax file is under public files.
                     Also, did not have an enormous amount of commits because I used the existing CS 008 website as a base to build the CS 145 website.
-                </h3>
-                <p></p>
+                    JQuery used to add a hide button on detail page, as the videos may add an overwhelming amount of visual input.
+                    I didn't use a specific source to get the fucntion(s), but used bits and pieces and put them all together, including Bob's lectures.
+                    All links work, database is connected, Admin folder works, and all css validation errors(around 15 total errors over 9 pages) are random one liners that 
+                    i couldn't fix. 
+                </p>
             </section>
         </section>
 
